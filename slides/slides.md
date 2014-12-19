@@ -1,31 +1,27 @@
 % Using Haskell Professionally
 % Alfredo Di Napoli
-% March 28, 2015
+% 28th of March, 2015
 
-# In the morning
+# Quoting Steve Jobs..
 
-## Getting up
+Today, I'm gonna tell you three stories.
 
-- Turn off alarm
-- Get out of bed
+&nbsp;
 
-## Breakfast
+\centerline{\includegraphics[width=200px]{images/steve.jpg}}
 
-- Eat eggs
-- Drink coffee
+* My story
+* My company story
+* Your story
 
-# In the evening
-
-## Dinner
-
-- Eat spaghetti
-- Drink wine
 
 ------------------
 
-![picture of spaghetti](images/spaghetti.jpg)
+## My story
 
-## Going to sleep
+Back in 2007...
 
-- Get in bed
-- Count sheep
+- First expose to FP at the university (OCaml)
+    + ...but our university is pretty much "mono-culture" (Java)
+    + Caught the "OOP" fever, didn't follow up
+- Discovered Python and the beauty of high level languages
