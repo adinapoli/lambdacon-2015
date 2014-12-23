@@ -1,3 +1,10 @@
+---
+title: Using Haskell Professionally
+author: Alfredo Di Napoli
+header-includes:
+    - \usepackage{comment}
+---
+
 % Using Haskell Professionally
 % Alfredo Di Napoli
 % 28th of March, 2015
@@ -77,3 +84,57 @@ When the time of choosing my master degree's project, I had no doubt but asking 
 professor Franco, which at the time was teaching "Parallel and Distributed Computing".
 I was extremely intrigued by the topic, and Franco revamped in me the holy flame of
 fast and compiled languages. So he said "Use C++, and live long and prosper".
+
+------------------
+
+# Your story
+
+\begin{center}
+What can \textbf{you} do and can \textbf{we} do as a community to embrace, support and
+spread functional programming?
+\end{center}
+
+------------------
+
+\begin{center}
+Reject the status-quo. Keep an open mind. Be pragmatic.
+\end{center}
+
+\note{
+    - Reject the status quo: bla bla
+    - Be open minded means bla bla
+    - Be pragmatic: bla bla
+}
+
+------------------
+
+## Quoting Bret Victor's "The future of programming"
+
+[..]So the most dangerous thought that you can have as a creative person
+is to think that you know what you're doing. Because once you think you know
+what you're doing, you stop looking around for other ways of doing things. And
+**you stop being able to see other ways** of doing things.[..]
+
+------------------
+
+[..] if you don't want to be this guy, if you want to be open or receptive to
+new ways of thinking, to invent new ways of thinking, I think the first step
+is you have to say to yourself, **"I don't know what I'm doing.** [..]
+I think you have to say, "we don't know what programming is. We don't know
+what computing is. We don't even know what a computer is."
+
+&nbsp;
+
+**And once you truly understand that - and once you truly believe that - then you're free.**
+
+------------------
+
+\begin{center}
+Thank you.
+\end{center}
+
+------------------
+
+\begin{center}
+Questions?
+\end{center}
