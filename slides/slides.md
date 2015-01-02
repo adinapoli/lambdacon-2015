@@ -90,9 +90,16 @@ fast and compiled languages. So he said "Use C++, and live long and prosper".
 # Your story
 
 \begin{center}
-What can \textbf{you} do and can \textbf{we} do as a community to embrace, support and
+What can \textbf{you} do (as a community) to embrace, support and
 spread functional programming?
 \end{center}
+
+\note{
+So here it comes the last story. The main character of this
+story is all of us, intended both as a community and as an
+individual. What follows are my personal suggestions, so
+yuor mileage might vary
+}
 
 ------------------
 
@@ -101,9 +108,22 @@ Reject the status-quo. Keep an open mind. Be pragmatic.
 \end{center}
 
 \note{
-    - Reject the status quo: bla bla
+    - Be pragmatic: Always remember CUFP's slogan:
+    " Functional Programming as a means, not an end." We are
+    programmers, and as such, our main focus should be
+    building things. As long as we write reliable and robust
+    code, we are free to use whatever we like. Part of our
+    profession is to build things for ourselves, the other
+    is to craft things for others to use. To our customers,
+    the fact our software is written with a functional
+    language doesn't matter. If it's buggy and/or betrays
+    stakeholders expectations, it's just using FP as an end.
+    But if our software is correct, reliable, easier to
+    maintain and delivered in half of the time, we are using
+    FP as a means to deliver better software.
+    But in order to do that we need to embrace the unknown.
     - Be open minded means bla bla
-    - Be pragmatic: bla bla
+    - Reject the status quo: bla bla
 }
 
 ------------------
