@@ -5,10 +5,6 @@ header-includes:
     - \usepackage{comment}
 ---
 
-% Using Haskell Professionally
-% Alfredo Di Napoli
-% 28th of March, 2015
-
 # Quoting Steve Jobs..
 
 Today, I'm gonna tell you three stories.
@@ -29,48 +25,50 @@ Today, I'm gonna tell you three stories.
 Back in 2007, I had my first exposure to FP, under the form of
 a university course. The course taught us OCaml.
 
-------------------
-
-Being focused on data structures  and algorithm, and not on the
-"real world", I did lack the motivation of building things in it.
-
-------------------
-
-As a young undergraduate, I caught the OOP fever shortly after,
-and didn't look at OCaml again, despite finding it fascinating.
-
-------------------
-
-The fact my university was (**is**) mono-culture (i.e. Java), together with
-my refuse of the _status quo_, pushed me to "greener pastures", where
-I found Python, falling in love with it.
+\note{
+Being focused on data structures and algorithm, and not on the
+"real world", I did lack the motivation of building things in it.  As
+a young undergraduate, I caught the OOP fever shortly after, and
+didn't look at OCaml again, despite finding it fascinating.  The fact
+my university was (**is**) mono-culture (i.e. Java), together with my
+refuse of the _status quo_, pushed me to "greener pastures", where I
+found Python, falling in love with it. The desire at the time was
+to see what was "out there".
+}
 
 ------------------
 
 ## Fast-forward 2009..
 
-I was still in love with Python. At the time I was a regular attendees of
-**Python-it.org**, a popular Italian community.
+I was still in love with Python. At the time I was a regular
+attendees of **Python-it.org**, a popular Italian community.
+
+\note{
+The "off-topic" forum room was the place where we talked about
+technology and every non-related Python topic, and more than once,
+a user I respected mentioned Scheme and its cousin **Clojure**.
+Attracted by lisps allure, I decided to give a Clojure a spin.
+}
 
 ------------------
 
-The "off-topic" forum room was the place where we talked about technology and
-every non-related Python topic, and more than once, a user I respected mentioned
-Scheme and its cousin **Clojure**.
-
-------------------
-
+\begin{center}
 I fell in love with Clojure.
+\end{center}
 
 ------------------
 
 Pushing myself forward in my holy grail search, I was exposed to a huge number of
 programming language, trying to find the "perfect" one: Scheme, Clojure, Common Lisp,
-**Haskell**, Io, Ruby, _put-yet-another-language-here_. I did look at Haskell with
-interest, but I find it quite arcane. I did order and started reading the "Real World
-Haskell" book, but I found it disappointing (at the time): "Why on earth did I need to
-wrap my values inside this _Just_ thing, if then I need to unwrap it to inspect the value?"
+**Haskell**, Io, Ruby, _put-yet-another-language-here_.
+
+\note{
+I did look at Haskell with interest, but I find it quite arcane.
+I did order and started reading the "Real World Haskell" book, but I found it
+disappointing (at the time): "Why on earth did I need to wrap my values inside
+this _Just_ thing, if then I need to unwrap it to inspect the value?"
 - I thought at time.
+}
 
 ------------------
 
