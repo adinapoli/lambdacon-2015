@@ -85,6 +85,32 @@ fast and compiled languages. So he said "Use C++, and live long and prosper".
 
 ------------------
 
+## The typical Sinatra hello world app...
+
+``` ruby
+require 'sinatra'
+
+get '/hi' do
+  "Hello World!"
+  end
+```
+
+------------------
+
+## ...and the Snap equivalent
+
+``` haskell
+{-# LANGUAGE OverloadedStrings #-}
+
+import Snap
+
+main :: IO ()
+main = quickHttpServe $ do
+  route [("/hi", method GET $ writeBS "Hello World!")]
+```
+
+------------------
+
 # Your story
 
 \begin{center}
@@ -102,7 +128,7 @@ yuor mileage might vary
 ------------------
 
 \begin{center}
-Reject the status-quo. Keep an open mind. Be pragmatic.
+Be pragmatic.
 \end{center}
 
 \note{
@@ -120,8 +146,26 @@ Reject the status-quo. Keep an open mind. Be pragmatic.
     maintain and delivered in half of the time, we are using
     FP as a means to deliver better software.
     But in order to do that we need to embrace the unknown.
+}
+
+------------------
+
+\begin{center}
+Keep an open mind.
+\end{center}
+
+\note{
     - Be open minded means bla bla
-    - Reject the status quo: bla bla
+}
+
+------------------
+
+\begin{center}
+Reject the status-quo.
+\end{center}
+
+\note{
+    - Reject the status quo bla bla
 }
 
 ------------------
@@ -141,9 +185,11 @@ is you have to say to yourself, **"I don't know what I'm doing.** [..]
 I think you have to say, "we don't know what programming is. We don't know
 what computing is. We don't even know what a computer is."
 
-&nbsp;
+------------------
 
-**And once you truly understand that - and once you truly believe that - then you're free.**
+\begin{center}
+\textbf{And once you truly understand that - and once you truly believe that - then you're free.}
+\end{center}
 
 ------------------
 
