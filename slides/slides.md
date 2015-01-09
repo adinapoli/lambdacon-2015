@@ -85,6 +85,16 @@ fast and compiled languages. So he said "Use C++, and live long and prosper".
 
 ------------------
 
+## The Manchester era
+
+\centerline{\includegraphics[width=200px]{images/cake_mill.jpg}}
+
+\note {
+Talk about the Manchester period. Don't descend into personal stuff.
+}
+
+------------------
+
 ## The typical Sinatra hello world app...
 
 ``` ruby
