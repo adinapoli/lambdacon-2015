@@ -5,6 +5,14 @@ header-includes:
     - \usepackage{comment}
 ---
 
+\note{
+  Hello everyone, and thanks for coming. We have
+  a pretty thight schedule, but I'm trying to leave
+  15 mins for Q&A. If you have question during the
+  talk though, do not hesitate to interrupt me, as
+  we'll take time from the final Q&A section.
+}
+
 # Quoting Steve Jobs..
 
 Today, I'm gonna tell you three stories.
@@ -17,6 +25,21 @@ Today, I'm gonna tell you three stories.
 * My company story
 * Your story
 
+\note{
+ So, quoting Steve Jobs, today I'm gonna tell you three
+ stories:
+ - My story, or how I went to be an hobbyst to a
+ professionally employed Haskell programmer in
+ less than 2 years, sharing my experience on
+ what worked (and what not).
+ - The story of Iris Connect, the company I work for,
+ telling you why we choose Haskell, the pro (and snags)
+ of using it in production and overall show that it's a
+ pragmatic programming language which can be used
+ to solve real-world problems
+ - The final one will be about you, but we'll get to that.
+}
+
 
 ------------------
 
@@ -26,6 +49,8 @@ Back in 2007, I had my first exposure to FP, under the form of
 a university course. The course taught us OCaml.
 
 \note{
+My first encounter with FP dates back in 2007, where I attended
+a university course, all in OCaml.
 Being focused on data structures and algorithm, and not on the
 "real world", I did lack the motivation of building things in it.  As
 a young undergraduate, I caught the OOP fever shortly after, and
@@ -80,8 +105,16 @@ So, despite the interest, I did went back to Clojure and lisp-family languages.
 
 When the time of choosing my master degree's project, I had no doubt but asking to my
 professor Franco, which at the time was teaching "Parallel and Distributed Computing".
-I was extremely intrigued by the topic, and Franco revamped in me the holy flame of
-fast and compiled languages. So he said "Use C++, and live long and prosper".
+I started working in C++.
+
+------------------
+
+## Fast-forward 2011..
+
+The topic, together with the exposure to C++ revamped in me the holy flame of
+fast and compiled languages. So I was determined to find a fast (possibly the
+fastest!) functional language, with a strong type system.
+
 
 ------------------
 
@@ -92,6 +125,29 @@ fast and compiled languages. So he said "Use C++, and live long and prosper".
 \note {
 Talk about the Manchester period. Don't descend into personal stuff.
 }
+
+------------------
+
+## Why Haskell?
+
+because software development is a marathon, not a sprint.
+
+
+------------------
+
+## "Pros" of working in Haskell
+
+- Refactoring is a dream
+- EDSL are a piece of cake
+- High quality libraries
+
+------------------
+
+## Snags of working in Haskell
+
+- Cabal Hell
+- ???
+- ???
 
 ------------------
 
@@ -118,6 +174,30 @@ main :: IO ()
 main = quickHttpServe $ do
   route [("/hi", method GET $ writeBS "Hello World!")]
 ```
+
+------------------
+
+# In a nutshell...
+
+\begin{center}
+Haskell is a very pragmatic language...
+\end{center}
+
+\note{
+}
+
+------------------
+
+# In a nutshell...
+
+\begin{center}
+Haskell is a very pragmatic language...
+
+...but not all the people using it are!
+\end{center}
+
+\note{
+}
 
 ------------------
 
