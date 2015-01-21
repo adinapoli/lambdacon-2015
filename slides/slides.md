@@ -130,8 +130,15 @@ Talk about the Manchester period. Don't descend into personal stuff.
 
 ## Why Haskell?
 
-because software development is a marathon, not a sprint.
+- Because software development is a marathon, not a sprint.
 
+------------------
+
+## Why Haskell?
+
+- Because software development is a marathon, not a sprint.
+- "It took me more time writing the specs that implementing
+  the feature itself"
 
 ------------------
 
@@ -140,6 +147,29 @@ because software development is a marathon, not a sprint.
 - Refactoring is a dream
 - EDSL are a piece of cake
 - High quality libraries
+
+------------------
+
+## EDSL are a piece of cake
+
+``` haskell
+fromPreset :: MediaFile -> MediaFile
+           -> Maybe Atlas.VideoFilter
+           -> VideoPreset -> Maybe VideoRotation
+           -> LogLevel -> [T.Text]
+fromPreset filename outFilePath flt vpres vi ll =
+  let cli = ffmpegCLI $ mconcat [
+              i $ toTextIgnore filename
+            , loglevel ll
+            , fromVideoPreset vpres
+            , isVideoRotated vi <?> resetRotateMetadata
+            , yuv420p
+            , vf [rotateMb vi]
+            , isJust flt <?> vf_technicolor
+            , o_y_ext (toTextIgnore outFilePath) (Left vpres)
+            ]
+  in T.words cli
+```
 
 ------------------
 
