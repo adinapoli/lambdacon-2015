@@ -63,6 +63,16 @@ to see what was "out there".
 
 ------------------
 
+# The early days
+
+Back in 2007, I had my first exposure to FP, under the form of
+a university course. The course taught us OCaml.
+
+After the initial enthusiasm, I drifted back to Python and
+other OOP languages.
+
+------------------
+
 ## Fast-forward 2009..
 
 I was still in love with Python. At the time I was a regular
@@ -103,22 +113,77 @@ So, despite the interest, I did went back to Clojure and lisp-family languages.
 
 ## Fast-forward 2011..
 
-When the time of choosing my master degree's project, I had no doubt but asking to my
-professor Franco, which at the time was teaching "Parallel and Distributed Computing".
-I started working in C++.
+I was writing my masters degree dissertation on _Parallel and Distributed Computing_,
+using nothing but C++. The topic, together with the exposure to C++ revamped in me
+the holy flame of fast and compiled languages.
 
 ------------------
 
-## Fast-forward 2011..
+## Fast-forward 2011.. (contd.)
 
-The topic, together with the exposure to C++ revamped in me the holy flame of
-fast and compiled languages. So I was determined to find a fast (possibly the
-fastest!) functional language, with a strong type system.
+I was writing my masters degree dissertation on _Parallel and Distributed Computing_,
+using nothing but C++. The topic, together with the exposure to C++ revamped in me
+the holy flame of fast and compiled languages.
 
+Being Haskell a compiled language, I wanted to give it another go, so I bought
+_Learn You Some Haskell for Great Good_ and worked my way through it.
+
+\note{
+Recently LYSH seems to be heavily critiqued, but it was for me the only
+reason why I'm an Haskell programmer today. It taught me the beauty of the
+language and finally I understood all the things I wasn't able to get with
+RWH. It didn't teach me everything, but it was enough to get me going.
+}
+
+------------------
+
+## Mid 2012
+
+I started an internship with a company in the defense field, doing C++
+in Rome. To hone my Haskell skills I tried to contribute to an Haskell
+open source project, the [Snap](http://www.snapframework.com)
+framework.
+
+\note{
+I knew that to get really proficient with a language there is no
+better training ground that an open source project. I was lucky
+enough to be mentored by Doug Beardsley, one of Snap's lead
+engineers.
+}
+
+------------------
+
+## Mid 2012
+
+Being determined in earning a living with functional programming, I decided to
+concentrates my efforts only on three languages, based on different criteria
+(commercial users, personal preference, job offers abroad):
+
+- Haskell
+- OCaml
+- Scala
+
+\note {
+And it was the last one, Scala, my kickstart to the FP job industry.
+I sent the CV to a UK company in Manchester called Cake Solutions,
+and after the usual interview dance I was on-board! So I resigned
+from my internship, bought a one-way ticket to Manchester 2 weeks
+from there, and prepared for the biggest leap into the dark of
+my entire life.
+}
 
 ------------------
 
 ## The Manchester era
+
+\centerline{\includegraphics[width=200px]{images/cake_mill.jpg}}
+
+\note {
+When in Manchester, I was writing Scala for living
+}
+
+------------------
+## The Manchester era (contd.)
 
 \centerline{\includegraphics[width=200px]{images/cake_mill.jpg}}
 
@@ -128,13 +193,15 @@ Talk about the Manchester period. Don't descend into personal stuff.
 
 ------------------
 
+------------------
+
 ## Why Haskell?
 
 - Because software development is a marathon, not a sprint.
 
 \note{
 In my opinion, interpreted languages are great for prototyping,
-because you can just express your ideas without worryng too
+because you can just express your ideas without worrying too
 much about setting a build environment or that the compiler
 will reject your program. But I truly believe that if you
 want to build a software that will need to last for the next
