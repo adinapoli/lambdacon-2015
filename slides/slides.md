@@ -132,25 +132,56 @@ Talk about the Manchester period. Don't descend into personal stuff.
 
 - Because software development is a marathon, not a sprint.
 
+\note{
+In my opinion, interpreted languages are great for prototyping,
+because you can just express your ideas without worryng too
+much about setting a build environment or that the compiler
+will reject your program. But I truly believe that if you
+want to build a software that will need to last for the next
+10 years, that it will need to be scalable and extensible,
+that I think a "functional approach" is the only way to
+tame complexity.
+}
+
 ------------------
 
-## Why Haskell?
+## Why Haskell? (contd.)
 
 - Because software development is a marathon, not a sprint.
-- "It took me more time writing the specs that implementing
-  the feature itself"
+- "_It took me more time writing the specs that implementing
+  the feature itself_"
+
+\note{
+This sentence was told from one of our Ruby programmers during
+a standup, and I think it synthesize perfectly the message.
+By having a strong type system, Haskell allow us to write the
+business logic code AND its tests, without obsessively writing
+specs that just emulate what a compiler does for you: caching
+silly mistakes. For a business this is a great way to cut the
+time to market.
+}
 
 ------------------
 
 ## "Pros" of working in Haskell
 
 - Refactoring is a dream
-- EDSL are a piece of cake
+- EDSLs are a piece of cake
 - High quality libraries
 
 ------------------
 
-## EDSL are a piece of cake
+## Refactoring is a dream
+
+\note{
+Say is not JUST the type system, is about composition and parametricity.
+Lots of small, generic functions. But also that Haskellers like to
+decompose everything.
+}
+
+------------------
+
+## EDSLs are a piece of cake
 
 ``` haskell
 fromPreset :: MediaFile -> MediaFile
@@ -175,9 +206,30 @@ fromPreset filename outFilePath flt vpres vi ll =
 
 ## Snags of working in Haskell
 
+- Slow(ish) Compilation
 - Cabal Hell
 - ???
-- ???
+
+------------------
+
+## Slow(ish) compilation
+
+Insert here the xcd comic.
+
+------------------
+
+## Slow compilation: the caveat
+
+- It's a problem all non-interpreted languages have to deal with
+- GHC indeed does incremental compilation, building only what's changed
+- It's even slower if..
+    * You have TH (Template Haskell) in your code
+    * You are building with profiling enabled
+
+<div style="text-align: center">
+***If you want faster feedback loop, consider using ghci***
+</div>
+
 
 ------------------
 
