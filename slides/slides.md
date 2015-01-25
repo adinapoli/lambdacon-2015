@@ -5,6 +5,14 @@ header-includes:
     - \usepackage{comment}
 ---
 
+These slides are available at URL.
+
+External links are references are provided at the end.
+
+------------------
+
+# Quoting Steve Jobs..
+
 \note{
   Hello everyone, and thanks for coming. We have
   a pretty thight schedule, but I'm trying to leave
@@ -13,7 +21,6 @@ header-includes:
   we'll take time from the final Q&A section.
 }
 
-# Quoting Steve Jobs..
 
 Today, I'm gonna tell you three stories.
 
@@ -43,7 +50,11 @@ Today, I'm gonna tell you three stories.
 
 ------------------
 
-# My story
+\note{
+Important: for time reasons, I'm gonna scrap the early days.
+}
+
+# The early days
 
 Back in 2007, I had my first exposure to FP, under the form of
 a university course. The course taught us OCaml.
@@ -63,7 +74,7 @@ to see what was "out there".
 
 ------------------
 
-# The early days
+# The early days (contd.)
 
 Back in 2007, I had my first exposure to FP, under the form of
 a university course. The course taught us OCaml.
@@ -183,15 +194,15 @@ When in Manchester, I was writing Scala for living
 }
 
 ------------------
+
 ## The Manchester era (contd.)
 
-\centerline{\includegraphics[width=200px]{images/cake_mill.jpg}}
+To be filled.
 
 \note {
 Talk about the Manchester period. Don't descend into personal stuff.
 }
 
-------------------
 
 ------------------
 
@@ -441,3 +452,9 @@ Thank you.
 \begin{center}
 Questions?
 \end{center}
+
+------------------
+
+## External references
+
+* My road to Haskell
