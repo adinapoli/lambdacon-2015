@@ -187,17 +187,21 @@ my entire life.
 
 ## The Manchester era
 
+&nbsp;
+
 \centerline{\includegraphics[width=200px]{images/cake_mill.jpg}}
 
 \note {
-When in Manchester, I was writing Scala for living
+When in Manchester, I was writing Scala for living but kept
+spending my gloomy Mancunians evenings writing Haskell, the
+language I wanted to use.
 }
 
 ------------------
 
-## The Manchester era (contd.)
+&nbsp;
 
-To be filled.
+\centerline{\includegraphics[width=300px]{images/smatters.png}}
 
 \note {
 Talk about the Manchester period. Don't descend into personal stuff.
@@ -207,6 +211,10 @@ Talk about the Manchester period. Don't descend into personal stuff.
 ------------------
 
 ## Why Haskell?
+
+&nbsp;
+
+\centerline{\includegraphics[width=200px]{images/marathon.jpg}}
 
 - Because software development is a marathon, not a sprint.
 
@@ -223,11 +231,13 @@ tame complexity.
 
 ------------------
 
-## Why Haskell? (contd.)
+\center{
+  \textit{
+  "It took me more time writing the specs that implementing
+  the feature itself."
+  }
+}
 
-- Because software development is a marathon, not a sprint.
-- "_It took me more time writing the specs that implementing
-  the feature itself_"
 
 \note{
 This sentence was told from one of our Ruby programmers during
@@ -292,7 +302,9 @@ fromPreset filename outFilePath flt vpres vi ll =
 
 ## Slow(ish) compilation
 
-Insert here the xcd comic.
+&nbsp;
+
+\centerline{\includegraphics[width=200px]{images/compiling.png}}
 
 ------------------
 
@@ -304,9 +316,11 @@ Insert here the xcd comic.
     * You have TH (Template Haskell) in your code
     * You are building with profiling enabled
 
-<div style="text-align: center">
-***If you want faster feedback loop, consider using ghci***
-</div>
+\center{
+  \textbf {
+  If you want faster feedback loop, consider using ghci
+  }
+}
 
 
 ------------------
