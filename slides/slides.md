@@ -255,6 +255,7 @@ time to market.
 
 - Refactoring is a dream
 - EDSLs are a piece of cake
+- Makes impossible states unrepresentable
 - High quality libraries
 
 ------------------
@@ -289,6 +290,36 @@ fromPreset filename outFilePath flt vpres vi ll =
             ]
   in T.words cli
 ```
+
+------------------
+
+## Makes impossible states unrepresentable
+
+Real world scenario:
+
+``` haskell
+-- | Creates a new Supervisor. Maintains a map <ThreadId, ChildSpec>
+newSupervisor :: IO Supervisor
+
+-- | Start an async thread to supervise its children
+supervise :: Supervisor -> IO ()
+
+-- | forkIO-inspired function
+forkSupervised :: Supervisor -> RestartStrategy -> IO () -> IO ThreadId
+```
+
+------------------
+
+Example usage:
+
+``` haskell
+main = do
+  sup <- newSupervisor
+  supervise sup
+  _ <- forkSupervised sup OneForOne $ threadDelay 1000000 >> print "Done"
+```
+
+Can you think to a potential bug?
 
 ------------------
 
