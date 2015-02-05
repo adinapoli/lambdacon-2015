@@ -323,6 +323,94 @@ Can you think to a potential bug?
 
 ------------------
 
+**Nothing in the types is forcing us to call `supervise` before actually
+supervise some thread!
+**
+
+``` haskell
+main = do
+  sup <- newSupervisor
+  -- Wrong! We forgot to start the supervisor...
+  _ <- forkSupervised sup OneForOne $ threadDelay 1000000 >> print "Done"
+```
+
+As Haskellers, we can certainly do better!
+
+------------------
+
+## GADTs to the rescue!
+
+GADTs (Generalised Algebraic Data Types) allow us to constrain the
+type in the polimorphic type variable (`a` in the example).
+
+``` haskell
+-- Two inhabitated types (no constructors)
+data Uninitialised
+data Initialised
+
+data Supervisor_ a where
+     NewSupervisor :: {
+      -- record fields (omitted)
+      } -> Supervisor_ Uninitialised
+     Supervisor :: {
+      -- record fields (omitted)
+      } -> Supervisor_ Initialised
+
+-- Client-friendly type synonyms
+
+type SupervisorSpec = Supervisor_ Uninitialised
+type Supervisor = Supervisor_ Initialised
+```
+
+------------------
+
+Let's now slightly change our API to be this:
+snippet again...
+
+``` haskell
+-- | Creates a new Supervisor. Maintains a map <ThreadId, ChildSpec>
+newSupervisor :: IO SupervisorSpec
+
+-- | Start an async thread to supervise its children
+supervise :: SupervisorSpec -> IO Supervisor
+```
+
+------------------
+
+What did we get? Let's try to run the "wrong"
+snippet again...
+
+``` haskell
+main = do
+  sup <- newSupervisor
+  _ <- forkSupervised sup OneForOne $ threadDelay 1000000 >> print "Done"
+```
+
+GHC will complain:
+
+``` haskell
+Couldn't match type ‘Control.Concurrent.Supervisor.Uninitialised’
+         with ‘Control.Concurrent.Supervisor.Initialised’
+Expected type: Supervisor
+Actual type: Control.Concurrent.Supervisor.SupervisorSpec
+```
+
+------------------
+
+* This is because now we require a `Supervisor` to be initialised first
+* The type system prevented us making a silly mistake
+    - Failed with a very useful error message
+* Profit!
+
+This is just a small example (this is only one of the possible solutions),
+but the benefits are real.
+
+\note{
+Funny fact: after this change, I spotted a bug in one of my tests!
+}
+
+------------------
+
 ## Snags of working in Haskell
 
 - Slow(ish) Compilation
