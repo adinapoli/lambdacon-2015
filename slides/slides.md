@@ -50,10 +50,6 @@ Today, I'm gonna tell you three stories.
 
 ------------------
 
-\note{
-Important: for time reasons, I'm gonna scrap the early days.
-}
-
 # The early days
 
 Back in 2007, I had my first exposure to FP, under the form of
@@ -150,6 +146,12 @@ RWH. It didn't teach me everything, but it was enough to get me going.
 
 ## Mid 2012
 
+&nbsp;
+
+\centerline{\includegraphics[width=200px]{images/meteor.jpg}}
+
+&nbsp;
+
 I started an internship with a company in the defense field, doing C++
 in Rome. To hone my Haskell skills I tried to contribute to an Haskell
 open source project, the [Snap](http://www.snapframework.com)
@@ -191,6 +193,12 @@ my entire life.
 
 \centerline{\includegraphics[width=200px]{images/cake_mill.jpg}}
 
+\center {
+  \textit{
+    Scala programmer during the day, Haskell coder at night.
+  }
+}
+
 \note {
 When in Manchester, I was writing Scala for living but kept
 spending my gloomy Mancunians evenings writing Haskell, the
@@ -203,10 +211,76 @@ language I wanted to use.
 
 \centerline{\includegraphics[width=300px]{images/smatters.png}}
 
+&nbsp;
+
+\centerline{\includegraphics[width=200px]{images/wt.png}}
+
 \note {
-Talk about the Manchester period. Don't descend into personal stuff.
+Talk about the fact I met people from Well Typed, together with
+Andres Loh, which later would remember me.
 }
 
+------------------
+
+* After a couple of months (it was July 2013) Well Typed was
+  hiring. I decided to take pot luck and I applied.
+* To maximise my chances, I applied to a couple of other
+  positions for Haskell jobs.
+* Despite the rejections, **I was actually able to face an
+  entire interview doing nothing but Haskell!**
+
+\note {
+Say this was an important turning point, where I switched from
+an hobbyst to a professional applying for a job.
+}
+
+------------------
+
+## August 2013, Vieste - Italy
+
+&nbsp;
+
+\centerline{\includegraphics[width=200px]{images/vieste.jpg}}
+
+\center {
+Got rejected by WT, but they said "A client of us might be
+searching soon..."
+}
+
+------------------
+
+## Landing the tech job I loved
+
+&nbsp;
+
+\centerline{\includegraphics[width=200px]{images/interview.jpg}}
+
+On the 29th of August, I applied for a Haskell job @ Iris Connect.
+Took a train to Brigthon, did the interview and was offered
+the position. **I was officially an Haskeller!**
+
+------------------
+
+## Takehome lessons
+
+
+* Don’t be afraid to take leaps into the dark
+* Life is about opportunities, seize them
+* Try to contribute to a “famous” Haskell OSS
+* Constantly sharpen your saw
+* Be receptive, do networking
+
+\note{
+Don’t be afraid to take leaps into the dark: I turned down a job offer in the safe harbor of my home city for something totally new and scary. If I didn’t do that, today I probably wouldn’t be an Haskell programmer.
+
+Life is about opportunities, seize them: Think about what would have happened if I was too shy to ask Cake Solutions about Skills Matter’s courses. They would have never payed for the course, I would have never met Andres and probably never applied to WT. Duncan would have probably not even considered referring me to Iris.
+
+Try to contribute to a “famous” Haskell OSS: I was able to land this job also because I had experience with web dev in Haskell. But I had experience mostly because I contributed to Snap. There is a substantial difference to say “I have used Snap”, as opposed as “I used Snap and I have implemented feature X”.
+
+Constantly sharpen your saw: If I felt “realised”, today I would still be working in Manchester. The burning desire I had to work as a professional Haskell dev caused me to spend my spare time programming and studying.
+
+Be receptive, do networking: Having a strong network is vital. Try to actively contribute to the community, let other Haskeller know you. Let them think “I have already heard about John Doe”. Even if just an handfull will do, you won’t be a total stranger but someone into the community. I think this is the best thing which can happen to an Haskeller.
+}
 
 ------------------
 
@@ -591,3 +665,8 @@ Questions?
 ## External references
 
 * My road to Haskell
+  http://www.alfredodinapoli.com/posts/2014-04-27-my-road-to-haskell.html
+* Don Stewart - Haskell in the large
+  http://code.haskell.org/~dons/talks/dons-google-2015-01-27.pdf
+* Bret Victor - The Future of Programming
+  http://vimeo.com/71278954
