@@ -78,7 +78,7 @@ other OOP languages.
 
 ------------------
 
-## Fast-forward 2009..
+# Fast-forward 2009..
 
 I was still in love with Python. At the time I was a regular
 attendees of **Python-it.org**, a popular Italian community.
@@ -116,7 +116,7 @@ So, despite the interest, I did went back to Clojure and lisp-family languages.
 
 ------------------
 
-## Fast-forward 2011..
+# Fast-forward 2011..
 
 I was writing my masters degree dissertation on _Parallel and Distributed Computing_,
 using nothing but C++. The topic, together with the exposure to C++ revamped in me
@@ -124,7 +124,7 @@ the holy flame of fast and compiled languages.
 
 ------------------
 
-## Fast-forward 2011.. (contd.)
+# Fast-forward 2011.. (contd.)
 
 I was writing my masters degree dissertation on _Parallel and Distributed Computing_,
 using nothing but C++. The topic, together with the exposure to C++ revamped in me
@@ -142,7 +142,7 @@ RWH. It didn't teach me everything, but it was enough to get me going.
 
 ------------------
 
-## Mid 2012
+# Mid 2012
 
 &nbsp;
 
@@ -164,7 +164,7 @@ engineers.
 
 ------------------
 
-## Mid 2012
+# Mid 2012 (contd.)
 
 Being determined in earning a living with functional programming, I decided to
 concentrates my efforts only on three languages, based on different criteria
@@ -185,11 +185,9 @@ my entire life.
 
 ------------------
 
-## The Manchester era
+# The Manchester era
 
-&nbsp;
-
-\centerline{\includegraphics[scale=0.2]{images/cake_mill.jpg}}
+\centerline{\includegraphics[scale=0.07]{images/cake_mill.jpg}}
 
 \center {
   \textit{
@@ -234,11 +232,9 @@ an hobbyst to a professional applying for a job.
 
 ------------------
 
-## August 2013, Vieste - Italy
+# August 2013, Vieste - Italy
 
-&nbsp;
-
-\centerline{\includegraphics[scale=0.4]{images/vieste.jpg}}
+\centerline{\includegraphics[scale=0.2]{images/vieste.jpg}}
 
 \center {
 Got rejected by WT, but they said "A client of us might be
@@ -247,11 +243,9 @@ searching soon..."
 
 ------------------
 
-## Landing the tech job I loved
+# Landing the tech job I loved
 
-&nbsp;
-
-\centerline{\includegraphics[scale=0.2]{images/interview.jpg}}
+\centerline{\includegraphics[scale=0.06]{images/interview.jpg}}
 
 On the 29th of August, I applied for a Haskell job @ Iris Connect.
 Took a train to Brigthon, did the interview and was offered
@@ -259,14 +253,14 @@ the position. **I was officially an Haskeller!**
 
 ------------------
 
-## Takehome lessons
+# Takehome lessons
 
 
-* Don’t be afraid to take leaps into the dark
-* Life is about opportunities, seize them
-* Try to contribute to a “famous” Haskell OSS
-* Constantly sharpen your saw
-* Be receptive, do networking
+1. Don’t be afraid to take leaps into the dark
+2. Life is about opportunities, seize them
+3. Try to contribute to a “famous” Haskell OSS
+4. Constantly sharpen your saw
+5. Be receptive, do networking
 
 \note{
 Don’t be afraid to take leaps into the dark: I turned down a job offer in the safe harbor of my home city for something totally new and scary. If I didn’t do that, today I probably wouldn’t be an Haskell programmer.
@@ -282,9 +276,7 @@ Be receptive, do networking: Having a strong network is vital. Try to actively c
 
 ------------------
 
-## Why Haskell?
-
-&nbsp;
+# Why Haskell?
 
 \centerline{\includegraphics[scale=0.4]{images/marathon.jpg}}
 
@@ -323,7 +315,7 @@ time to market.
 
 ------------------
 
-## "Pros" of working in Haskell
+# "Pros" of working in Haskell
 
 1. Refactoring is a dream
 2. EDSLs are a piece of cake
@@ -332,7 +324,7 @@ time to market.
 
 ------------------
 
-## Refactoring is a dream
+# Refactoring is a dream
 
 \note{
 Say is not JUST the type system, is about composition and parametricity.
@@ -342,7 +334,7 @@ decompose everything.
 
 ------------------
 
-## EDSLs are a piece of cake
+# EDSLs are a piece of cake
 
 ``` haskell
 fromPreset :: MediaFile -> MediaFile
@@ -365,7 +357,7 @@ fromPreset filename outFilePath flt vpres vi ll =
 
 ------------------
 
-## Makes impossible states unrepresentable
+# Makes impossible states unrepresentable
 
 Real world scenario:
 
@@ -391,7 +383,7 @@ main = do
   _ <- forkSupervised sup OneForOne $ threadDelay 1000000 >> print "Done"
 ```
 
-Can you think to a potential bug?
+Can you think of a potential bug?
 
 ------------------
 
@@ -410,7 +402,7 @@ As Haskellers, we can certainly do better!
 
 ------------------
 
-## GADTs to the rescue!
+# GADTs to the rescue!
 
 GADTs (Generalised Algebraic Data Types) allow us to constrain the
 type in the polimorphic type variable (`a` in the example).
@@ -483,7 +475,7 @@ Funny fact: after this change, I spotted a bug in one of my tests!
 
 ------------------
 
-## Snags of working in Haskell
+# Snags of working in Haskell
 
 1. Slow(ish) Compilation
 2. Cabal Hell
@@ -491,15 +483,13 @@ Funny fact: after this change, I spotted a bug in one of my tests!
 
 ------------------
 
-## Slow(ish) compilation
-
-&nbsp;
+# Slow(ish) compilation
 
 \centerline{\includegraphics[scale=0.5]{images/compiling.png}}
 
 ------------------
 
-## Slow compilation: the caveat
+# Slow compilation: the caveat
 
 1. It's a problem all non-interpreted languages have to deal with
 2. GHC indeed does incremental compilation, building only what's changed
@@ -516,7 +506,7 @@ Funny fact: after this change, I spotted a bug in one of my tests!
 
 ------------------
 
-## The typical Sinatra hello world app...
+# The typical Sinatra hello world app...
 
 ``` ruby
 require 'sinatra'
@@ -528,7 +518,7 @@ get '/hi' do
 
 ------------------
 
-## ...and the Snap equivalent
+# ...and the Snap equivalent
 
 ``` haskell
 {-# LANGUAGE OverloadedStrings #-}
@@ -609,7 +599,7 @@ Reject the status-quo.
 
 ------------------
 
-## Quoting Bret Victor's "The future of programming"
+# Quoting Bret Victor's "The future of programming"
 
 [..]So the most dangerous thought that you can have as a creative person
 is to think that you know what you're doing. Because once you think you know
@@ -644,7 +634,7 @@ Questions?
 
 ------------------
 
-## External references
+# External references
 
 * My road to Haskell
   http://www.alfredodinapoli.com/posts/2014-04-27-my-road-to-haskell.html
