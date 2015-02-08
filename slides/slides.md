@@ -369,7 +369,10 @@ newSupervisor :: IO Supervisor
 supervise :: Supervisor -> IO ()
 
 -- | forkIO-inspired function
-forkSupervised :: Supervisor -> RestartStrategy -> IO () -> IO ThreadId
+forkSupervised :: Supervisor
+               -> RestartStrategy
+               -> IO ()
+               -> IO ThreadId
 ```
 
 ------------------
@@ -380,10 +383,12 @@ Example usage:
 main = do
   sup <- newSupervisor
   supervise sup
-  _ <- forkSupervised sup OneForOne $ threadDelay 1000000 >> print "Done"
+  _ <- forkSupervised sup OneForOne $ do
+         threadDelay 1000000
+         print "Done"
 ```
 
-Can you think of a potential bug?
+Can you spot a potential bug?
 
 ------------------
 
@@ -395,7 +400,9 @@ supervise some thread!
 main = do
   sup <- newSupervisor
   -- Wrong! We forgot to start the supervisor...
-  _ <- forkSupervised sup OneForOne $ threadDelay 1000000 >> print "Done"
+  _ <- forkSupervised sup OneForOne $ do
+         threadDelay 1000000
+         print "Done"
 ```
 
 As Haskellers, we can certainly do better!
@@ -408,7 +415,6 @@ GADTs (Generalised Algebraic Data Types) allow us to constrain the
 type in the polimorphic type variable (`a` in the example).
 
 ``` haskell
--- Two inhabitated types (no constructors)
 data Uninitialised
 data Initialised
 
@@ -420,8 +426,6 @@ data Supervisor_ a where
       -- record fields (omitted)
       } -> Supervisor_ Initialised
 
--- Client-friendly type synonyms
-
 type SupervisorSpec = Supervisor_ Uninitialised
 type Supervisor = Supervisor_ Initialised
 ```
@@ -429,10 +433,11 @@ type Supervisor = Supervisor_ Initialised
 ------------------
 
 Let's now slightly change our API to be this:
-snippet again...
+
+&nbsp;
 
 ``` haskell
--- | Creates a new Supervisor. Maintains a map <ThreadId, ChildSpec>
+-- | Creates a new Supervisor.
 newSupervisor :: IO SupervisorSpec
 
 -- | Start an async thread to supervise its children
@@ -441,20 +446,31 @@ supervise :: SupervisorSpec -> IO Supervisor
 
 ------------------
 
+&nbsp;
+
 What did we get? Let's try to run the "wrong"
 snippet again...
+
+&nbsp;
 
 ``` haskell
 main = do
   sup <- newSupervisor
-  _ <- forkSupervised sup OneForOne $ threadDelay 1000000 >> print "Done"
+  _ <- forkSupervised sup OneForOne $ do
+         threadDelay 1000000
+         print "Done"
 ```
+&nbsp;
+
+. . .
 
 GHC will complain:
 
+&nbsp;
+
 ``` haskell
-Couldn't match type 'Control.Concurrent.Supervisor.Uninitialised'
-         with 'Control.Concurrent.Supervisor.Initialised'
+Couldn't match type Control.Concurrent.Supervisor.Uninitialised
+         with Control.Concurrent.Supervisor.Initialised
 Expected type: Supervisor
 Actual type: Control.Concurrent.Supervisor.SupervisorSpec
 ```
