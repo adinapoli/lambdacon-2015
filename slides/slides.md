@@ -1,8 +1,6 @@
 ---
 title: Using Haskell Professionally
 author: Alfredo Di Napoli
-header-includes:
-    - \usepackage{comment}
 ---
 
 These slides are available at URL.
@@ -26,11 +24,11 @@ Today, I'm gonna tell you three stories.
 
 &nbsp;
 
-\centerline{\includegraphics[width=200px]{images/steve.jpg}}
+\centerline{\includegraphics[scale=0.4]{images/steve.jpg}}
 
-* My story
-* My company story
-* Your story
+1. My story
+2. My company story
+3. Your story
 
 \note{
  So, quoting Steve Jobs, today I'm gonna tell you three
@@ -148,7 +146,7 @@ RWH. It didn't teach me everything, but it was enough to get me going.
 
 &nbsp;
 
-\centerline{\includegraphics[width=200px]{images/meteor.jpg}}
+\centerline{\includegraphics[scale=0.3]{images/meteor.jpg}}
 
 &nbsp;
 
@@ -191,7 +189,7 @@ my entire life.
 
 &nbsp;
 
-\centerline{\includegraphics[width=200px]{images/cake_mill.jpg}}
+\centerline{\includegraphics[scale=0.2]{images/cake_mill.jpg}}
 
 \center {
   \textit{
@@ -209,11 +207,11 @@ language I wanted to use.
 
 &nbsp;
 
-\centerline{\includegraphics[width=300px]{images/smatters.png}}
+\centerline{\includegraphics[scale=0.3]{images/smatters.png}}
 
 &nbsp;
 
-\centerline{\includegraphics[width=200px]{images/wt.png}}
+\centerline{\includegraphics[scale=0.5]{images/wt.png}}
 
 \note {
 Talk about the fact I met people from Well Typed, together with
@@ -240,7 +238,7 @@ an hobbyst to a professional applying for a job.
 
 &nbsp;
 
-\centerline{\includegraphics[width=200px]{images/vieste.jpg}}
+\centerline{\includegraphics[scale=0.4]{images/vieste.jpg}}
 
 \center {
 Got rejected by WT, but they said "A client of us might be
@@ -253,7 +251,7 @@ searching soon..."
 
 &nbsp;
 
-\centerline{\includegraphics[width=200px]{images/interview.jpg}}
+\centerline{\includegraphics[scale=0.2]{images/interview.jpg}}
 
 On the 29th of August, I applied for a Haskell job @ Iris Connect.
 Took a train to Brigthon, did the interview and was offered
@@ -288,7 +286,7 @@ Be receptive, do networking: Having a strong network is vital. Try to actively c
 
 &nbsp;
 
-\centerline{\includegraphics[width=200px]{images/marathon.jpg}}
+\centerline{\includegraphics[scale=0.4]{images/marathon.jpg}}
 
 - Because software development is a marathon, not a sprint.
 
@@ -327,10 +325,10 @@ time to market.
 
 ## "Pros" of working in Haskell
 
-- Refactoring is a dream
-- EDSLs are a piece of cake
-- Makes impossible states unrepresentable
-- High quality libraries
+1. Refactoring is a dream
+2. EDSLs are a piece of cake
+3. Makes impossible states unrepresentable
+4. High quality libraries
 
 ------------------
 
@@ -463,18 +461,18 @@ main = do
 GHC will complain:
 
 ``` haskell
-Couldn't match type ‘Control.Concurrent.Supervisor.Uninitialised’
-         with ‘Control.Concurrent.Supervisor.Initialised’
+Couldn't match type 'Control.Concurrent.Supervisor.Uninitialised'
+         with 'Control.Concurrent.Supervisor.Initialised'
 Expected type: Supervisor
 Actual type: Control.Concurrent.Supervisor.SupervisorSpec
 ```
 
 ------------------
 
-* This is because now we require a `Supervisor` to be initialised first
-* The type system prevented us making a silly mistake
-    - Failed with a very useful error message
-* Profit!
+1. This is because now we require a `Supervisor` to be initialised first
+2. The type system prevented us making a silly mistake
+    a. Failed with a very useful error message
+3. Profit!
 
 This is just a small example (this is only one of the possible solutions),
 but the benefits are real.
@@ -487,9 +485,9 @@ Funny fact: after this change, I spotted a bug in one of my tests!
 
 ## Snags of working in Haskell
 
-- Slow(ish) Compilation
-- Cabal Hell
-- ???
+1. Slow(ish) Compilation
+2. Cabal Hell
+3. ???
 
 ------------------
 
@@ -497,17 +495,17 @@ Funny fact: after this change, I spotted a bug in one of my tests!
 
 &nbsp;
 
-\centerline{\includegraphics[width=200px]{images/compiling.png}}
+\centerline{\includegraphics[scale=0.5]{images/compiling.png}}
 
 ------------------
 
 ## Slow compilation: the caveat
 
-- It's a problem all non-interpreted languages have to deal with
-- GHC indeed does incremental compilation, building only what's changed
-- It's even slower if..
-    * You have TH (Template Haskell) in your code
-    * You are building with profiling enabled
+1. It's a problem all non-interpreted languages have to deal with
+2. GHC indeed does incremental compilation, building only what's changed
+3. It's even slower if..
+    a. You have TH (Template Haskell) in your code
+    b. You are building with profiling enabled
 
 \center{
   \textbf {
@@ -546,29 +544,13 @@ main = quickHttpServe $ do
 
 # In a nutshell...
 
-\begin{center}
 Haskell is a very pragmatic language...
-\end{center}
 
-\note{
-}
-
-------------------
-
-# In a nutshell...
-
-\begin{center}
-Haskell is a very pragmatic language...
+. . .
 
 ...but not all the people using it are!
-\end{center}
-
-\note{
-}
 
 ------------------
-
-# Your story
 
 \begin{center}
 What can \textbf{you} do (as a community) to embrace, support and
