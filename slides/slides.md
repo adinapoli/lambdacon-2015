@@ -258,7 +258,7 @@ the position. **I was officially an Haskeller!**
 
 1. Don’t be afraid to take leaps into the dark
 2. Life is about opportunities, seize them
-3. Try to contribute to a “famous” Haskell OSS
+3. Try to contribute to a "famous" Haskell OSS
 4. Constantly sharpen your saw
 5. Be receptive, do networking
 
@@ -311,6 +311,65 @@ business logic code AND its tests, without obsessively writing
 specs that just emulate what a compiler does for you: caching
 silly mistakes. For a business this is a great way to cut the
 time to market.
+}
+
+------------------
+
+\centerline{\includegraphics[scale=0.4]{images/painter.jpg}}
+
+\center{
+  Because we are like Shlemiel the painter.
+}
+
+------------------
+
+\center{
+  \textit{
+   Shlemiel gets a job as a street painter, painting the dotted lines down the middle of the road.
+  }
+}
+
+\center{
+  \textit{
+   On the first day he takes a can of paint out to the road and finishes 300 yards of the road.
+   "That's pretty good!" says his boss, "you're a fast worker!".
+  }
+}
+
+\center{
+  \textit{
+   The next day Shlemiel only gets 150 yards done. "Well, that's not nearly as good as yesterday,
+   but you're still a fast worker."
+  }
+}
+
+\center{
+  \textit{
+   The next day Shlemiel paints 30 yards of the road. "Only 30!" shouts his boss.
+   "That's unacceptable! On the first day you did ten times that much work! What's going on?"
+  }
+}
+
+\center{
+  \textbf{
+   "I can't help it," says Shlemiel. "Every day I get farther and farther away from the paint can!"
+  }
+}
+
+------------------
+
+1. The more time it pass, the farther we get from our "paint can", the mental model we built
+   of the system.
+
+2. In large scale systems, you can have parts that won't be touched for *years*!
+    a. How do you defend yourself when the refactoring or feature time comes?
+
+3. A rich, strong and expressive type system can be your ultimate ally against complexity
+
+\center{
+ \textbf {
+   As universe expands, so does the entropy in your software: use types to keep it at bay!
+ }
 }
 
 ------------------
@@ -596,6 +655,35 @@ Be pragmatic.
 ------------------
 
 \begin{center}
+Don't be condescending.
+\end{center}
+
+\note{
+    - Letter to a young Haskeller
+}
+
+------------------
+
+# Quoting Bazerman's "Letter to a Young Haskell Enthusiast"
+
+\center {
+  \textit {
+    [..]Haskell wasn't built on great ideas, although it has those.
+    It was built on a culture of how ideas are treated.[..]
+  }
+}
+
+\center {
+  \textit {
+    [..]In functional programming, our proofs are not by contradiction, but by construction.
+    If you want to teach functional programming, or preach functional programming,
+    or just to even have productive discussions[..], it will serve you well to learn that ethic.[..]
+  }
+}
+
+------------------
+
+\begin{center}
 Keep an open mind.
 \end{center}
 
@@ -605,30 +693,22 @@ Keep an open mind.
 
 ------------------
 
-\begin{center}
-Reject the status-quo.
-\end{center}
+# Quoting Bret Victor's "The future of programming"
 
-\note{
-    - Reject the status quo bla bla
+\centerline{\includegraphics[scale=0.2]{images/bret.png}}
+
+\center{
+[..]So the most dangerous thought that you can have as a creative person
+is to think that you know what you're doing. Because once you think you know
+what you're doing, \textbf{you stop looking around for other ways of doing things.}[..]
 }
 
 ------------------
 
-# Quoting Bret Victor's "The future of programming"
-
-[..]So the most dangerous thought that you can have as a creative person
-is to think that you know what you're doing. Because once you think you know
-what you're doing, you stop looking around for other ways of doing things. And
-**you stop being able to see other ways** of doing things.[..]
-
-------------------
-
-[..] if you don't want to be this guy, if you want to be open or receptive to
+[..]If you want to be open or receptive to
 new ways of thinking, to invent new ways of thinking, I think the first step
-is you have to say to yourself, **"I don't know what I'm doing.** [..]
-I think you have to say, "we don't know what programming is. We don't know
-what computing is. We don't even know what a computer is."
+is you have to say to yourself, \textbf{"I don't know what I'm doing."}[..]
+I think you have to say, "we don't know what programming is".[..]
 
 ------------------
 
@@ -652,9 +732,13 @@ Questions?
 
 # External references
 
-* My road to Haskell
+* **My road to Haskell**
   http://www.alfredodinapoli.com/posts/2014-04-27-my-road-to-haskell.html
-* Don Stewart - Haskell in the large
+* **Don Stewart - Haskell in the large**
   http://code.haskell.org/~dons/talks/dons-google-2015-01-27.pdf
-* Bret Victor - The Future of Programming
+* **Bret Victor - The Future of Programming**
   http://vimeo.com/71278954
+* **Joel Spolsky - Back to Basics**
+  http://www.joelonsoftware.com/articles/fog0000000319.html
+* **Gershom Bazerman - Letter to a Young Haskell Enthusiast**
+  http://comonad.com/reader/2014/letter-to-a-young-haskell-enthusiast/
