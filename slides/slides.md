@@ -276,6 +276,18 @@ Be receptive, do networking: Having a strong network is vital. Try to actively c
 
 ------------------
 
+# Iris Connect's story
+
+1. A sharing and collaboration platform for teachers via
+   video recording, feedback and introspection.
+
+2. Initially build with RoR, it was rewritten from
+   scratch in Haskell (backend) and RoR + Angular.js (frontend)
+   a. Effort initially started by my colleage Chris Dornan and
+      Well Typed
+
+------------------
+
 # Why Haskell?
 
 \centerline{\includegraphics[scale=0.4]{images/marathon.jpg}}
@@ -365,6 +377,8 @@ time to market.
     a. How do you defend yourself when the refactoring or feature time comes?
 
 3. A rich, strong and expressive type system can be your ultimate ally against complexity
+    a. Things like `newtype`s and `ADT`s can help you cure common "diseases" like
+       _Boolean Blindness_
 
 \center{
  \textbf {
@@ -384,6 +398,17 @@ time to market.
 ------------------
 
 # Refactoring is a dream
+
+1. The type system naturally guides you
+2. In Haskell we tend to write small and generic functions
+    a. Cfr. Bob Martin's "Clean Code"
+    b. Most of the time they don't even break as they are
+       written to work on polimorphic types
+    c. Code reuse = profit!
+
+So ultimately is not just about the strong type system, is about
+Haskell's (and Haskellers) natural tendency towards **composition**
+and **parametricity**.
 
 \note{
 Say is not JUST the type system, is about composition and parametricity.
@@ -421,7 +446,8 @@ fromPreset filename outFilePath flt vpres vi ll =
 Real world scenario:
 
 ``` haskell
--- | Creates a new Supervisor. Maintains a map <ThreadId, ChildSpec>
+-- | Creates a new Supervisor.
+-- Maintains a map <ThreadId, ChildSpec>
 newSupervisor :: IO Supervisor
 
 -- | Start an async thread to supervise its children
@@ -468,22 +494,18 @@ As Haskellers, we can certainly do better!
 
 ------------------
 
-# GADTs to the rescue!
+# Phantom Types to the rescue!
 
-GADTs (Generalised Algebraic Data Types) allow us to constrain the
-type in the polimorphic type variable (`a` in the example).
+Phantom Types allow us to "embed" constrain on our
+types, together with smart constructors.
 
 ``` haskell
 data Uninitialised
 data Initialised
 
-data Supervisor_ a where
-     NewSupervisor :: {
+data Supervisor_ a = Supervisor_ {
       -- record fields (omitted)
-      } -> Supervisor_ Uninitialised
-     Supervisor :: {
-      -- record fields (omitted)
-      } -> Supervisor_ Initialised
+      }
 
 type SupervisorSpec = Supervisor_ Uninitialised
 type Supervisor = Supervisor_ Initialised
@@ -578,44 +600,9 @@ Funny fact: after this change, I spotted a bug in one of my tests!
   }
 }
 
-
 ------------------
 
-# The typical Sinatra hello world app...
-
-``` ruby
-require 'sinatra'
-
-get '/hi' do
-  "Hello World!"
-  end
-```
-
-------------------
-
-# ...and the Snap equivalent
-
-``` haskell
-{-# LANGUAGE OverloadedStrings #-}
-
-import Snap
-
-main :: IO ()
-main = quickHttpServe $ do
-  route [("/hi", method GET $ writeBS "Hello World!")]
-```
-
-------------------
-
-# In a nutshell...
-
-Haskell is a very pragmatic language...
-
-. . .
-
-...but not all the people using it are!
-
-------------------
+# Your Story
 
 \begin{center}
 What can \textbf{you} do (as a community) to embrace, support and
