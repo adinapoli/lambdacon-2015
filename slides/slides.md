@@ -167,7 +167,7 @@ engineers.
 # Mid 2012 (contd.)
 
 Being determined in earning a living with functional programming, I decided to
-concentrates my efforts only on three languages, based on different criteria
+concentrate my efforts only on three languages, based on different criteria
 (commercial users, personal preference, job offers abroad):
 
 - Haskell
@@ -256,35 +256,52 @@ the position. **I was officially an Haskeller!**
 # Takehome lessons
 
 
-1. Don’t be afraid to take leaps into the dark
+1. Don't be afraid to take leaps into the dark
 2. Life is about opportunities, seize them
 3. Try to contribute to a "famous" Haskell OSS
-4. Constantly sharpen your saw
+4. Constantly "sharpen your saw"
 5. Be receptive, do networking
 
 \note{
-Don’t be afraid to take leaps into the dark: I turned down a job offer in the safe harbor of my home city for something totally new and scary. If I didn’t do that, today I probably wouldn’t be an Haskell programmer.
+Don't be afraid to take leaps into the dark: I turned down a job offer in the safe harbor of my home city for something totally new and scary. If I didn’t do that, today I probably wouldn’t be an Haskell programmer.
 
-Life is about opportunities, seize them: Think about what would have happened if I was too shy to ask Cake Solutions about Skills Matter’s courses. They would have never payed for the course, I would have never met Andres and probably never applied to WT. Duncan would have probably not even considered referring me to Iris.
+Life is about opportunities, seize them: Think about what would have happened if I was too shy to ask Cake Solutions about Skills Matter's courses. They would have never payed for the course, I would have never met Andres and probably never applied to WT. Duncan would have probably not even considered referring me to Iris.
 
-Try to contribute to a “famous” Haskell OSS: I was able to land this job also because I had experience with web dev in Haskell. But I had experience mostly because I contributed to Snap. There is a substantial difference to say “I have used Snap”, as opposed as “I used Snap and I have implemented feature X”.
+Try to contribute to a "famous" Haskell OSS: I was able to land this job also because I had experience with web dev in Haskell. But I had experience mostly because I contributed to Snap. There is a substantial difference to say "I have used Snap", as opposed as "I used Snap and I have implemented feature X".
 
-Constantly sharpen your saw: If I felt “realised”, today I would still be working in Manchester. The burning desire I had to work as a professional Haskell dev caused me to spend my spare time programming and studying.
+Constantly sharpen your saw: If I felt "realised", today I would still be working in Manchester. The burning desire I had to work as a professional Haskell dev caused me to spend my spare time programming and studying.
 
-Be receptive, do networking: Having a strong network is vital. Try to actively contribute to the community, let other Haskeller know you. Let them think “I have already heard about John Doe”. Even if just an handfull will do, you won’t be a total stranger but someone into the community. I think this is the best thing which can happen to an Haskeller.
+Be receptive, do networking: Having a strong network is vital. Try to actively contribute to the community, let other Haskeller know you. Let them think "I have already heard about John Doe". Even if just an handfull will do, you won't be a total stranger but someone into the community. I think this is the best thing which can happen to an Haskeller.
 }
 
 ------------------
 
 # Iris Connect's story
 
-1. A sharing and collaboration platform for teachers via
+\centerline{\includegraphics[scale=0.3]{images/iris_logo.png}}
+
+&nbsp;
+
+A sharing and collaboration platform for teachers via
    video recording, feedback and introspection.
 
-2. Initially build with RoR, it was rewritten from
+------------------
+
+&nbsp;
+
+1. Initially build with RoR, it was rewritten from
    scratch in Haskell (backend) and RoR + Angular.js (frontend)
-   a. Effort initially started by my colleage Chris Dornan and
-      Well Typed
+    a. Effort initially started by my colleage Chris Dornan and
+       Well Typed
+
+&nbsp;
+
+2. The backend is composed by two main projects:
+    a. The frontend-facing API server which holds the model and
+       the business logic (**Atlas**)
+    b. The video transcoding system (**Hermes**), a highly
+       distributed and fault tolerant system, built on top of
+       RabbitMQ.
 
 ------------------
 
@@ -478,7 +495,7 @@ Can you spot a potential bug?
 ------------------
 
 **Nothing in the types is forcing us to call `supervise` before actually
-supervise some thread!
+supervising some thread!
 **
 
 ``` haskell
@@ -576,7 +593,6 @@ Funny fact: after this change, I spotted a bug in one of my tests!
 
 1. Slow(ish) Compilation
 2. Cabal Hell
-3. ???
 
 ------------------
 
@@ -599,6 +615,12 @@ Funny fact: after this change, I spotted a bug in one of my tests!
   If you want faster feedback loop, consider using ghci
   }
 }
+
+------------------
+
+# Cabal Hell
+
+TODO.
 
 ------------------
 
