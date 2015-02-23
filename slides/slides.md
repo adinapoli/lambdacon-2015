@@ -620,7 +620,33 @@ Funny fact: after this change, I spotted a bug in one of my tests!
 
 # Cabal Hell
 
-TODO.
+It's the aggregate of more than one problem, which ultimately results
+in "I couldn't install package X"
+
+&nbsp;
+
+\centerline{\includegraphics[scale=0.5]{images/hell.png}}
+
+------------------
+
+# Cabal Hell - the silver linings
+
+1. Sandboxes mitigate the issue
+
+```
+cabal sandbox init
+cabal install
+```
+
+2. "Package aggregates" can help
+    - Stackage
+    - HaskellLTS
+    - Nix and NixOS
+
+
+3. Broader solutions are in the pipeline
+    - Edward Z. Yang's "Backpack"
+
 
 ------------------
 
@@ -751,3 +777,12 @@ Questions?
   http://www.joelonsoftware.com/articles/fog0000000319.html
 * **Gershom Bazerman - Letter to a Young Haskell Enthusiast**
   http://comonad.com/reader/2014/letter-to-a-young-haskell-enthusiast/
+
+------------------
+
+# External references (contd.)
+
+* **How we might abolish Cabal hell (part one)**
+  http://www.well-typed.com/blog/2014/09/how-we-might-abolish-cabal-hell-part-1/
+* **How we might abolish Cabal hell (part two)**
+  http://www.well-typed.com/blog/104/
