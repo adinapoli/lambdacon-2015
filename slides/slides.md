@@ -3,7 +3,7 @@ title: Using Haskell Professionally
 author: Alfredo Di Napoli
 ---
 
-These slides are available at URL.
+These slides are available at http://goo.gl/9Yn0Q3
 
 External links are references are provided at the end.
 
@@ -45,100 +45,6 @@ Today, I'm gonna tell you three stories.
  - The final one will be about you, but we'll get to that.
 }
 
-
-------------------
-
-# The early days
-
-Back in 2007, I had my first exposure to FP, under the form of
-a university course. The course taught us OCaml.
-
-\note{
-My first encounter with FP dates back in 2007, where I attended
-a university course, all in OCaml.
-Being focused on data structures and algorithm, and not on the
-"real world", I did lack the motivation of building things in it.  As
-a young undergraduate, I caught the OOP fever shortly after, and
-didn't look at OCaml again, despite finding it fascinating.  The fact
-my university was (**is**) mono-culture (i.e. Java), together with my
-refuse of the _status quo_, pushed me to "greener pastures", where I
-found Python, falling in love with it. The desire at the time was
-to see what was "out there".
-}
-
-------------------
-
-# The early days (contd.)
-
-Back in 2007, I had my first exposure to FP, under the form of
-a university course. The course taught us OCaml.
-
-After the initial enthusiasm, I drifted back to Python and
-other OOP languages.
-
-------------------
-
-# Fast-forward 2009..
-
-I was still in love with Python. At the time I was a regular
-attendees of **Python-it.org**, a popular Italian community.
-
-\note{
-The "off-topic" forum room was the place where we talked about
-technology and every non-related Python topic, and more than once,
-a user I respected mentioned Scheme and its cousin **Clojure**.
-Attracted by lisps allure, I decided to give a Clojure a spin.
-}
-
-------------------
-
-\begin{center}
-I fell in love with Clojure.
-\end{center}
-
-------------------
-
-Pushing myself forward in my holy grail search, I was exposed to a huge number of
-programming language, trying to find the "perfect" one: Scheme, Clojure, Common Lisp,
-**Haskell**, Io, Ruby, _put-yet-another-language-here_.
-
-\note{
-I did look at Haskell with interest, but I find it quite arcane.
-I did order and started reading the "Real World Haskell" book, but I found it
-disappointing (at the time): "Why on earth did I need to wrap my values inside
-this _Just_ thing, if then I need to unwrap it to inspect the value?"
-- I thought at time.
-}
-
-------------------
-
-So, despite the interest, I did went back to Clojure and lisp-family languages.
-
-------------------
-
-# Fast-forward 2011..
-
-I was writing my masters degree dissertation on _Parallel and Distributed Computing_,
-using nothing but C++. The topic, together with the exposure to C++ revamped in me
-the holy flame of fast and compiled languages.
-
-------------------
-
-# Fast-forward 2011.. (contd.)
-
-I was writing my masters degree dissertation on _Parallel and Distributed Computing_,
-using nothing but C++. The topic, together with the exposure to C++ revamped in me
-the holy flame of fast and compiled languages.
-
-Being Haskell a compiled language, I wanted to give it another go, so I bought
-_Learn You Some Haskell for Great Good_ and worked my way through it.
-
-\note{
-Recently LYSH seems to be heavily critiqued, but it was for me the only
-reason why I'm an Haskell programmer today. It taught me the beauty of the
-language and finally I understood all the things I wasn't able to get with
-RWH. It didn't teach me everything, but it was enough to get me going.
-}
 
 ------------------
 
@@ -353,36 +259,19 @@ time to market.
 ------------------
 
 \center{
-  \textit{
-   Shlemiel gets a job as a street painter, painting the dotted lines down the middle of the road.
-  }
-}
-
-\center{
-  \textit{
-   On the first day he takes a can of paint out to the road and finishes 300 yards of the road.
-   "That's pretty good!" says his boss, "you're a fast worker!".
-  }
-}
-
-\center{
-  \textit{
-   The next day Shlemiel only gets 150 yards done. "Well, that's not nearly as good as yesterday,
-   but you're still a fast worker."
-  }
-}
-
-\center{
-  \textit{
-   The next day Shlemiel paints 30 yards of the road. "Only 30!" shouts his boss.
-   "That's unacceptable! On the first day you did ten times that much work! What's going on?"
-  }
-}
-
-\center{
   \textbf{
    "I can't help it," says Shlemiel. "Every day I get farther and farther away from the paint can!"
   }
+}
+
+\note{
+   Shlemiel gets a job as a street painter, painting the dotted lines down the middle of the road.
+   On the first day he takes a can of paint out to the road and finishes 300 yards of the road.
+   "That's pretty good!" says his boss, "you're a fast worker!".
+   The next day Shlemiel only gets 150 yards done. "Well, that's not nearly as good as yesterday,
+   but you're still a fast worker."
+   The next day Shlemiel paints 30 yards of the road. "Only 30!" shouts his boss.
+   "That's unacceptable! On the first day you did ten times that much work! What's going on?"
 }
 
 ------------------
@@ -620,8 +509,8 @@ Funny fact: after this change, I spotted a bug in one of my tests!
 
 # Cabal Hell
 
-It's the aggregate of more than one problem, which ultimately results
-in "I couldn't install package X"
+It's the aggregate of more than one problem, which most of the time results
+in "I couldn't install package X (easily)"
 
 &nbsp;
 
@@ -712,7 +601,7 @@ Don't be condescending.
   \textit {
     [..]In functional programming, our proofs are not by contradiction, but by construction.
     If you want to teach functional programming, or preach functional programming,
-    or just to even have productive discussions[..], it will serve you well to learn that ethic.[..]
+    [..], it will serve you well to learn that ethic.[..]
   }
 }
 
@@ -732,7 +621,7 @@ Keep an open mind.
 
 \centerline{\includegraphics[scale=0.2]{images/bret.png}}
 
-\center{
+\note{
 [..]So the most dangerous thought that you can have as a creative person
 is to think that you know what you're doing. Because once you think you know
 what you're doing, \textbf{you stop looking around for other ways of doing things.}[..]
