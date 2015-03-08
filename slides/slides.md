@@ -3,12 +3,6 @@ title: Using Haskell Professionally
 author: Alfredo Di Napoli
 ---
 
-These slides are available at http://goo.gl/9Yn0Q3
-
-External links are references are provided at the end.
-
-------------------
-
 # Quoting Steve Jobs..
 
 \note{
@@ -294,12 +288,11 @@ time to market.
 
 ------------------
 
-# "Pros" of working in Haskell
+# Some "Pros" of working in Haskell
 
 1. Refactoring is a dream
 2. EDSLs are a piece of cake
 3. Makes impossible states unrepresentable
-4. High quality libraries
 
 ------------------
 
