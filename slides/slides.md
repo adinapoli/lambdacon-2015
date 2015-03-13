@@ -182,7 +182,7 @@ Be receptive, do networking: Having a strong network is vital. Try to actively c
 
 &nbsp;
 
-A sharing and collaboration platform for teachers via
+A sharing and collaboration CPD platform for teachers via
    video recording, feedback and introspection.
 
 ------------------
@@ -464,6 +464,10 @@ Actual type: Control.Concurrent.Supervisor.SupervisorSpec
 
 This is just a small example (this is only one of the possible solutions),
 but the benefits are real.
+
+&nbsp;
+
+[https://github.com/adinapoli/threads-supervisor](https://github.com/adinapoli/threads-supervisor)
 
 \note{
 Funny fact: after this change, I spotted a bug in one of my tests!
