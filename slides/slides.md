@@ -105,7 +105,7 @@ language I wanted to use.
 
 &nbsp;
 
-\centerline{\includegraphics[scale=0.3]{images/smatters.png}}
+\centerline{\includegraphics[scale=0.5]{images/smatters.png}}
 
 &nbsp;
 
@@ -616,7 +616,7 @@ Keep an open mind.
 
 # Quoting Bret Victor's "The future of programming"
 
-\centerline{\includegraphics[scale=0.2]{images/bret.png}}
+\centerline{\includegraphics[scale=0.3]{images/bret.png}}
 
 \note{
 [..]So the most dangerous thought that you can have as a creative person
