@@ -511,7 +511,11 @@ in "I couldn't install package X (easily)"
 
 &nbsp;
 
-\centerline{\includegraphics[scale=0.5]{images/hell.png}}
+\begin{figure}[h!]
+\centering
+  \includegraphics[scale=0.5]{images/hell.png}
+  \caption{\scriptsize Image courtesy of Well Typed Ltd}
+\end{figure}
 
 ------------------
 
